@@ -10,6 +10,13 @@ export const nav = [
   { label: "Journal", href: "#arrangement-of-the-month" },
 ];
 
+export const tickerItems = [
+  "Design Your Own Bouquet",
+  "No Two Arrangements Alike",
+  "Sunday Edition · Est. 2026",
+  "New Configuration Every Week",
+];
+
 export const valueProps = [
   {
     title: "Client-Driven Personalization",

@@ -2,18 +2,30 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { nav } from "@/lib/content";
+import { nav, tickerItems } from "@/lib/content";
 
 export function SiteHeader() {
   const [open, setOpen] = useState(false);
+  // Duplicated once so the track can loop seamlessly at -50%.
+  const ticker = [...tickerItems, ...tickerItems];
 
   return (
     <header className="sticky top-0 z-50 bg-paper/95 backdrop-blur">
       <div className="rule-thick" />
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-3 font-label text-[13px] uppercase text-ink-soft sm:px-8">
-        <span>Sunday Edition</span>
-        <span className="hidden sm:inline">Design Your Own Bouquet</span>
-        <span>Est. 2026</span>
+      <div className="overflow-hidden bg-accent py-2">
+        <div className="marquee-track flex w-max whitespace-nowrap">
+          {ticker.map((item, i) => (
+            <span
+              key={i}
+              className="flex items-center font-label text-[12px] uppercase tracking-widest text-paper"
+            >
+              {item}
+              <span aria-hidden="true" className="mx-6 text-paper/50">
+                ✦
+              </span>
+            </span>
+          ))}
+        </div>
       </div>
       <div className="rule" />
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-6 px-6 py-5 sm:px-8">

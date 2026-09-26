@@ -18,7 +18,7 @@ export function Gallery() {
     <section id="gallery" className="mx-auto max-w-6xl px-6 py-20 sm:px-8">
       <div className="flex flex-wrap items-end justify-between gap-4 rule pb-4">
         <div>
-          <p className="font-label text-[13px] uppercase text-ink-faint">This Week&apos;s Edition</p>
+          <p className="font-label text-[13px] uppercase text-ink-faint"><span className="text-sage">✦</span> This Week&apos;s Edition</p>
           <h2 className="mt-2 font-masthead text-3xl text-ink sm:text-4xl">Shop the Standing Arrangements</h2>
         </div>
         <div className="flex gap-2">
@@ -48,7 +48,7 @@ export function Gallery() {
         {galleryItems.map((item) => (
           <article
             key={item.name}
-            className="w-[75%] shrink-0 snap-start border border-ink/15 border-t-4 bg-paper-2 p-6 sm:w-[45%] lg:w-[30%]"
+            className="w-[75%] shrink-0 snap-start border border-ink/15 border-t-4 bg-paper-2 p-6 transition-transform duration-200 hover:-translate-y-1 hover:shadow-lg sm:w-[45%] lg:w-[30%]"
             style={{ borderTopColor: item.palette[0] }}
           >
             <div className="border border-ink/10 bg-paper p-4">

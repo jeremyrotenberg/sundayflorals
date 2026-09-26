@@ -8,7 +8,7 @@ export function ArrangementOfMonth() {
   return (
     <section id="arrangement-of-the-month" className="mx-auto max-w-6xl px-6 py-20 sm:px-8">
       <div className="flex items-baseline justify-between rule pb-3">
-        <p className="font-label text-[13px] uppercase text-ink-faint">Front Page Feature</p>
+        <p className="font-label text-[13px] uppercase text-ink-faint"><span className="text-accent">✦</span> Front Page Feature</p>
         <p className="font-label text-[13px] uppercase text-ink-faint">
           Posted <LiveDate />
         </p>

@@ -12,7 +12,9 @@ export function ValueProps() {
   return (
     <section className="rule border-b border-rule bg-paper-2/60">
       <div className="mx-auto max-w-6xl px-6 py-14 sm:px-8">
-        <p className="font-label text-[13px] uppercase text-ink-faint">Why Sunday</p>
+        <p className="font-label text-[13px] uppercase text-ink-faint">
+          <span className="text-accent">✦</span> Why Sunday
+        </p>
         <div className="mt-8 grid gap-10 sm:grid-cols-2">
           {valueProps.map((item, i) => {
             const Icon = icons[item.icon];

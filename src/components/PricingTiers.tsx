@@ -13,7 +13,7 @@ export function PricingTiers() {
     <section id="pricing" className="bg-paper-2/60">
       <div className="mx-auto max-w-6xl px-6 py-20 sm:px-8">
         <div className="rule pb-4">
-          <p className="font-label text-[13px] uppercase text-ink-faint">The Classifieds</p>
+          <p className="font-label text-[13px] uppercase text-ink-faint"><span className="text-gold-ink">✦</span> The Classifieds</p>
           <h2 className="mt-2 font-masthead text-3xl text-ink sm:text-4xl">
             However You Shop, You Design It
           </h2>
@@ -25,13 +25,13 @@ export function PricingTiers() {
             return (
               <div
                 key={tier.name}
-                className={`flex flex-col border-2 bg-paper p-8 ${
+                className={`flex flex-col border-2 bg-paper p-8 transition-transform duration-200 hover:-translate-y-1 hover:shadow-lg ${
                   tier.featured ? theme.border : "border-ink/15"
                 }`}
               >
                 {tier.featured && (
                   <p
-                    className={`mb-4 self-start px-3 py-1 font-label text-[12px] uppercase text-paper ${theme.dot}`}
+                    className={`mb-4 -rotate-2 self-start px-3 py-1 font-label text-[12px] uppercase text-paper shadow-sm ${theme.dot}`}
                   >
                     Most Popular
                   </p>
