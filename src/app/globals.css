@@ -1,0 +1,112 @@
+@import "tailwindcss";
+
+:root {
+  --paper: #f7f2e7;
+  --paper-2: #efe6d3;
+  --paper-3: #e7dabf;
+  --ink: #201c14;
+  --ink-soft: #55503f;
+  --ink-faint: #8a8270;
+  --rule: #cabf9e;
+  --accent: #a8394a;
+  --accent-ink: #7a1f2d;
+  --accent-soft: #e9cfc9;
+  --sage: #5c6b4f;
+  --sage-soft: #dbe0cd;
+}
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-paper-2: var(--paper-2);
+  --color-paper-3: var(--paper-3);
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-ink-faint: var(--ink-faint);
+  --color-rule: var(--rule);
+  --color-accent: var(--accent);
+  --color-accent-ink: var(--accent-ink);
+  --color-accent-soft: var(--accent-soft);
+  --color-sage: var(--sage);
+  --color-sage-soft: var(--sage-soft);
+
+  --font-serif: Georgia, "Times New Roman", Times, serif;
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+* {
+  border-color: var(--rule);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-serif);
+}
+
+.font-masthead {
+  font-family: var(--font-serif);
+}
+
+.font-label {
+  font-family: var(--font-sans);
+  letter-spacing: 0.14em;
+}
+
+.rule {
+  border-top: 1px solid var(--rule);
+}
+
+.rule-inverse {
+  border-top: 1px solid color-mix(in srgb, var(--paper) 20%, transparent);
+}
+
+.rule-thick {
+  border-top: 3px double var(--ink);
+}
+
+/* Torn/deckled paper edge used on featured editorial cards */
+.deckle-edge {
+  position: relative;
+}
+
+.deckle-edge::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -1px;
+  height: 10px;
+  background-image: linear-gradient(135deg, var(--paper) 50%, transparent 50%),
+    linear-gradient(45deg, var(--paper) 50%, transparent 50%);
+  background-size: 16px 16px;
+  background-position: bottom left;
+  background-repeat: repeat-x;
+}
+
+.no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-up {
+  animation: fade-up 0.6s ease-out both;
+}
