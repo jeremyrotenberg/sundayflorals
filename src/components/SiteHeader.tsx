@@ -30,7 +30,7 @@ export function SiteHeader() {
         <div className="flex items-center gap-3">
           <a
             href="#configurator"
-            className="hidden whitespace-nowrap border border-ink px-4 py-2 font-label text-[13px] uppercase text-ink transition-colors hover:border-accent hover:text-accent sm:inline-block"
+            className="hidden whitespace-nowrap bg-accent px-4 py-2 font-label text-[13px] uppercase text-paper transition-colors hover:bg-accent-ink sm:inline-block"
           >
             Start an Order
           </a>

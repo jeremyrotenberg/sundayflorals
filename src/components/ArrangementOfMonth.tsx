@@ -14,7 +14,7 @@ export function ArrangementOfMonth() {
         </p>
       </div>
 
-      <div className="deckle-edge mt-8 grid gap-10 border border-ink/15 bg-paper-2 p-8 sm:p-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
+      <div className="deckle-edge mt-8 grid gap-10 border border-ink/15 border-t-4 border-t-accent bg-paper-2 p-8 sm:p-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
         <div className="mx-auto w-full max-w-xs border border-ink/10 bg-paper p-6">
           <BouquetIllustration
             className="mx-auto h-auto w-full max-w-[220px]"
@@ -36,7 +36,7 @@ export function ArrangementOfMonth() {
             <span className="font-masthead text-3xl text-ink">{a.price}</span>
             <a
               href="#pricing"
-              className="bg-ink px-6 py-3 font-label text-[13px] uppercase text-paper transition-colors hover:bg-accent"
+              className="bg-accent px-6 py-3 font-label text-[13px] uppercase text-paper transition-colors hover:bg-accent-ink"
             >
               {a.cta}
             </a>

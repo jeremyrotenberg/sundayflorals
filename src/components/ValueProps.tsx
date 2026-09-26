@@ -6,6 +6,8 @@ const icons = {
   wand: WandIcon,
 };
 
+const badgeThemes = ["bg-accent-soft text-accent-ink", "bg-gold-soft text-gold-ink"];
+
 export function ValueProps() {
   return (
     <section className="rule border-b border-rule bg-paper-2/60">
@@ -16,7 +18,11 @@ export function ValueProps() {
             const Icon = icons[item.icon];
             return (
               <div key={item.title} className={i > 0 ? "sm:border-l sm:border-rule sm:pl-10" : ""}>
-                <Icon className="h-7 w-7 text-accent" />
+                <span
+                  className={`flex h-12 w-12 items-center justify-center rounded-full ${badgeThemes[i % badgeThemes.length]}`}
+                >
+                  <Icon className="h-6 w-6" />
+                </span>
                 <h3 className="mt-4 font-masthead text-2xl text-ink">{item.title}</h3>
                 <p className="mt-2 max-w-md text-base leading-relaxed text-ink-soft">{item.body}</p>
               </div>

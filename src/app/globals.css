@@ -12,7 +12,11 @@
   --accent-ink: #7a1f2d;
   --accent-soft: #e9cfc9;
   --sage: #5c6b4f;
+  --sage-ink: #414d37;
   --sage-soft: #dbe0cd;
+  --gold: #c98a3e;
+  --gold-ink: #8f5f24;
+  --gold-soft: #f0dab5;
 }
 
 @theme inline {
@@ -27,7 +31,11 @@
   --color-accent-ink: var(--accent-ink);
   --color-accent-soft: var(--accent-soft);
   --color-sage: var(--sage);
+  --color-sage-ink: var(--sage-ink);
   --color-sage-soft: var(--sage-soft);
+  --color-gold: var(--gold);
+  --color-gold-ink: var(--gold-ink);
+  --color-gold-soft: var(--gold-soft);
 
   --font-serif: Georgia, "Times New Roman", Times, serif;
   --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;

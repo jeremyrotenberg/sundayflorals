@@ -48,7 +48,8 @@ export function Gallery() {
         {galleryItems.map((item) => (
           <article
             key={item.name}
-            className="w-[75%] shrink-0 snap-start border border-ink/15 bg-paper-2 p-6 sm:w-[45%] lg:w-[30%]"
+            className="w-[75%] shrink-0 snap-start border border-ink/15 border-t-4 bg-paper-2 p-6 sm:w-[45%] lg:w-[30%]"
+            style={{ borderTopColor: item.palette[0] }}
           >
             <div className="border border-ink/10 bg-paper p-4">
               <BouquetIllustration
@@ -64,7 +65,9 @@ export function Gallery() {
             <h3 className="mt-5 font-masthead text-xl text-ink">{item.name}</h3>
             <p className="mt-1 text-base text-ink-soft">{item.detail}</p>
             <div className="mt-4 flex items-center justify-between">
-              <span className="font-masthead text-lg text-ink">{item.price}</span>
+              <span className="font-masthead text-lg" style={{ color: item.palette[0] }}>
+                {item.price}
+              </span>
               <button className="font-label text-[12px] uppercase text-accent underline underline-offset-4">
                 Add to Order
               </button>

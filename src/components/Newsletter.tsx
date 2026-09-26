@@ -14,7 +14,7 @@ export function Newsletter() {
 
   return (
     <section className="mx-auto max-w-6xl px-6 pb-20 sm:px-8">
-      <div className="border border-dashed border-ink/30 p-8 sm:p-12">
+      <div className="border border-dashed border-accent/40 bg-gold-soft/30 p-8 sm:p-12">
         <div className="mx-auto max-w-lg text-center">
           <p className="font-label text-[13px] uppercase text-ink-faint">Clip &amp; Save</p>
           <h2 className="mt-2 font-masthead text-3xl text-ink sm:text-4xl">
@@ -42,7 +42,7 @@ export function Newsletter() {
               />
               <button
                 type="submit"
-                className="bg-ink px-6 py-3 font-label text-[13px] uppercase text-paper transition-colors hover:bg-accent"
+                className="bg-accent px-6 py-3 font-label text-[13px] uppercase text-paper transition-colors hover:bg-accent-ink"
               >
                 Subscribe
               </button>
