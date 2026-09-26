@@ -18,7 +18,7 @@ export function Gallery() {
     <section id="gallery" className="mx-auto max-w-6xl px-6 py-20 sm:px-8">
       <div className="flex flex-wrap items-end justify-between gap-4 rule pb-4">
         <div>
-          <p className="font-label text-[11px] uppercase text-ink-faint">This Week&apos;s Edition</p>
+          <p className="font-label text-[13px] uppercase text-ink-faint">This Week&apos;s Edition</p>
           <h2 className="mt-2 font-masthead text-3xl text-ink sm:text-4xl">Shop the Standing Arrangements</h2>
         </div>
         <div className="flex gap-2">
@@ -62,10 +62,10 @@ export function Gallery() {
               />
             </div>
             <h3 className="mt-5 font-masthead text-xl text-ink">{item.name}</h3>
-            <p className="mt-1 text-sm text-ink-soft">{item.detail}</p>
+            <p className="mt-1 text-base text-ink-soft">{item.detail}</p>
             <div className="mt-4 flex items-center justify-between">
               <span className="font-masthead text-lg text-ink">{item.price}</span>
-              <button className="font-label text-[10px] uppercase text-accent underline underline-offset-4">
+              <button className="font-label text-[12px] uppercase text-accent underline underline-offset-4">
                 Add to Order
               </button>
             </div>

@@ -8,8 +8,8 @@ export function ArrangementOfMonth() {
   return (
     <section id="arrangement-of-the-month" className="mx-auto max-w-6xl px-6 py-20 sm:px-8">
       <div className="flex items-baseline justify-between rule pb-3">
-        <p className="font-label text-[11px] uppercase text-ink-faint">Front Page Feature</p>
-        <p className="font-label text-[11px] uppercase text-ink-faint">
+        <p className="font-label text-[13px] uppercase text-ink-faint">Front Page Feature</p>
+        <p className="font-label text-[13px] uppercase text-ink-faint">
           Posted <LiveDate />
         </p>
       </div>
@@ -28,7 +28,7 @@ export function ArrangementOfMonth() {
         </div>
 
         <div>
-          <p className="font-label text-[11px] uppercase text-accent">{a.issue} · Arrangement of the Month</p>
+          <p className="font-label text-[13px] uppercase text-accent">{a.issue} · Arrangement of the Month</p>
           <h2 className="mt-3 font-masthead text-4xl leading-tight text-ink sm:text-5xl">{a.name}</h2>
           <p className="mt-5 max-w-lg text-base leading-relaxed text-ink-soft">{a.description}</p>
 
@@ -36,7 +36,7 @@ export function ArrangementOfMonth() {
             <span className="font-masthead text-3xl text-ink">{a.price}</span>
             <a
               href="#pricing"
-              className="bg-ink px-6 py-3 font-label text-[11px] uppercase text-paper transition-colors hover:bg-accent"
+              className="bg-ink px-6 py-3 font-label text-[13px] uppercase text-paper transition-colors hover:bg-accent"
             >
               {a.cta}
             </a>

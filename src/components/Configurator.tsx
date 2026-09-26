@@ -35,8 +35,8 @@ export function Configurator() {
     <section id="configurator" className="bg-ink text-paper">
       <div className="mx-auto max-w-6xl px-6 py-20 sm:px-8">
         <div className="flex items-baseline justify-between rule-inverse pb-3">
-          <p className="font-label text-[11px] uppercase text-paper/50">Try It Yourself</p>
-          <p className="font-label text-[11px] uppercase text-paper/50">The Configurator — Preview</p>
+          <p className="font-label text-[13px] uppercase text-paper/50">Try It Yourself</p>
+          <p className="font-label text-[13px] uppercase text-paper/50">The Configurator — Preview</p>
         </div>
 
         <div className="mt-10 grid gap-12 lg:grid-cols-[1fr_1fr] lg:items-center">
@@ -60,7 +60,7 @@ export function Configurator() {
 
             <a
               href="#pricing"
-              className="mt-9 inline-flex items-center gap-2 bg-paper px-6 py-3 font-label text-[11px] uppercase text-ink transition-colors hover:bg-accent hover:text-paper"
+              className="mt-9 inline-flex items-center gap-2 bg-paper px-6 py-3 font-label text-[13px] uppercase text-ink transition-colors hover:bg-accent hover:text-paper"
             >
               Build Your Full Bouquet
               <ArrowIcon className="h-3.5 w-3.5" />
@@ -69,7 +69,7 @@ export function Configurator() {
 
           <div className="mx-auto w-full max-w-sm border border-paper/15 bg-paper/[0.06] p-8">
             <BouquetIllustration colors={colors} className="mx-auto h-auto w-full max-w-[260px] transition-all duration-300" />
-            <p className="mt-6 border-t border-paper/15 pt-4 text-center font-label text-[10px] uppercase text-paper/50">
+            <p className="mt-6 border-t border-paper/15 pt-4 text-center font-label text-[12px] uppercase text-paper/50">
               Live Preview — Updates As You Choose
             </p>
           </div>
@@ -92,7 +92,7 @@ function Swatches({
 }) {
   return (
     <div>
-      <p className="font-label text-[10px] uppercase text-paper/50">{label}</p>
+      <p className="font-label text-[12px] uppercase text-paper/50">{label}</p>
       <div className="mt-3 flex flex-wrap gap-3">
         {options.map((opt) => {
           const active = opt.value === value;

@@ -5,7 +5,7 @@ import { ArrowIcon } from "./icons";
 export function Hero() {
   return (
     <section className="mx-auto max-w-6xl px-6 pb-16 pt-12 sm:px-8 sm:pt-16">
-      <p className="font-label text-[11px] uppercase text-ink-faint">
+      <p className="font-label text-[13px] uppercase text-ink-faint">
         <LiveDate /> · Sunday Edition
       </p>
 
@@ -25,38 +25,23 @@ export function Hero() {
           <div className="mt-8 flex flex-wrap items-center gap-4">
             <a
               href="#configurator"
-              className="group inline-flex items-center gap-2 bg-ink px-6 py-3 font-label text-[11px] uppercase text-paper transition-colors hover:bg-accent"
+              className="group inline-flex items-center gap-2 bg-ink px-6 py-3 font-label text-[13px] uppercase text-paper transition-colors hover:bg-accent"
             >
               Design Your Bouquet
               <ArrowIcon className="h-3.5 w-3.5 transition-transform group-hover:translate-x-1" />
             </a>
             <a
               href="#gallery"
-              className="font-label text-[11px] uppercase text-ink-soft underline decoration-rule underline-offset-4 transition-colors hover:text-accent"
+              className="font-label text-[13px] uppercase text-ink-soft underline decoration-rule underline-offset-4 transition-colors hover:text-accent"
             >
               Shop This Week&apos;s Edition
             </a>
           </div>
-
-          <dl className="mt-10 grid max-w-md grid-cols-3 gap-6 rule pt-6">
-            <div>
-              <dt className="font-label text-[10px] uppercase text-ink-faint">Delivery</dt>
-              <dd className="mt-1 font-masthead text-lg text-ink">Same Day</dd>
-            </div>
-            <div>
-              <dt className="font-label text-[10px] uppercase text-ink-faint">Sourcing</dt>
-              <dd className="mt-1 font-masthead text-lg text-ink">Direct</dd>
-            </div>
-            <div>
-              <dt className="font-label text-[10px] uppercase text-ink-faint">Design</dt>
-              <dd className="mt-1 font-masthead text-lg text-ink">Yours</dd>
-            </div>
-          </dl>
         </div>
 
         <div className="relative mx-auto w-full max-w-sm border border-ink/15 bg-paper-2 p-6">
           <BouquetIllustration className="mx-auto h-auto w-full max-w-[240px]" />
-          <p className="mt-4 border-t border-rule pt-3 text-center font-label text-[10px] uppercase text-ink-faint">
+          <p className="mt-4 border-t border-rule pt-3 text-center font-label text-[12px] uppercase text-ink-faint">
             Fig. 1 — Configured live by a Sunday customer
           </p>
         </div>

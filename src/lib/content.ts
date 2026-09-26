@@ -17,16 +17,6 @@ export const valueProps = [
     icon: "spark" as const,
   },
   {
-    title: "Direct-to-Consumer",
-    body: "No wholesalers, no markup middlemen. Flowers move straight from our growers to your door.",
-    icon: "leaf" as const,
-  },
-  {
-    title: "Same-Day Delivery",
-    body: "Order before 1pm local time and we'll have your arrangement on the doorstep before dinner.",
-    icon: "truck" as const,
-  },
-  {
     title: "The Configurator",
     body: "Our interactive bouquet builder makes ordering flowers feel less like a form and more like play.",
     icon: "wand" as const,
